@@ -1,0 +1,9 @@
+
+
+$Env:KUBECONFIG="C:\Users\12\.kube\configs\kubeconfig.yaml"
+
+kubectl create secret generic redis-passwd --from-literal=passwd=
+kubectl create configmap frontend-config --from-literal=journalEntries=10
+kubectl create configmap redis-config --from-file=launch.sh=launch.sh
+
+
